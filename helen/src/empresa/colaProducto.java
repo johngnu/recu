@@ -67,7 +67,7 @@ public class colaProducto {
     public void mostrarColaSimple() {
         colaProducto caux = new colaProducto(max);
         Producto x;
-        //System.out.println("Los elementos de la cola son:");
+        System.out.println("Los elementos de la cola son:");
 
         while (!esVacia()) {
             x = eliCola();

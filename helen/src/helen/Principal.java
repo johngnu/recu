@@ -6,9 +6,6 @@ package helen;
  */
 public class Principal {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Plato p1 = new Plato("fricase", 20);
         Plato p2 = new Plato("silpancho", 10);

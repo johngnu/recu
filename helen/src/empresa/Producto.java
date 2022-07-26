@@ -24,7 +24,8 @@ public class Producto {
     }
 
     public void mostrarProducto() {
-
+        System.out.println("nombre: " + nombre + " precio: " + precio 
+                + " cantidad: " + cantidad + " venc:" + anioVenc + " estado: " + estado);
     }
 
     public String getNombre() {
