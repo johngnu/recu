@@ -48,6 +48,7 @@ public class Principal {
     public static void llevarAlPrincipio(colaProducto cl, int a) {
         colaProducto caux = new colaProducto(cl.max);
         colaProducto caux2 = new colaProducto(cl.max);
+        System.out.print("*a) ** llevar al inicio los productos que vencen en: " + a);
         Producto x;
         while (!cl.esVacia()) {
             x = cl.eliCola();
