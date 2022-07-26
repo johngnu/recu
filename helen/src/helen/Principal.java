@@ -43,6 +43,13 @@ public class Principal {
         clp.adiCola(ps2);
         
         clp.mostrarColaSimple();
+        
+        // a)
+        calcularTotal("helen");
     }
     
+    
+    public static void calcularTotal(String x) {
+        
+    }
 }
