@@ -45,11 +45,32 @@ public class Principal {
         clp.mostrarColaSimple();
         
         // a)
-        calcularTotal("helen");
+        calcularTotal(clp, "roberta");
+        calcularTotal(clp, "helen");
     }
     
     
-    public static void calcularTotal(String x) {
-        
+    public static void calcularTotal(colaPedidos clp, String xc) {
+        colaPedidos caux = new colaPedidos(clp.max);
+        Pedidos x;
+        //System.out.println("Los elementos de la cola son:");
+        int total = 0;
+        while (!clp.esVacia()) {
+            x = clp.eliCola();
+            //x.mostrarPedidos();
+            if(x.getCli().getNombre().equals(xc)) {
+                pilaPlato paux = new pilaPlato(x.getPp().max);
+                Plato xp;
+                while (!x.getPp().esVacia()) {
+                    xp = x.getPp().eliPila();
+                    total = total + xp.getPrecio();
+                    paux.adiPila(xp);
+                }
+                x.getPp().vaciarPila(paux);
+            }
+            caux.adiCola(x);            
+        }
+        clp.vaciar(caux);
+        System.out.println(" total cliente: " + xc + " es: " + total);
     }
 }

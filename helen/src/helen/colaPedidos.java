@@ -67,7 +67,7 @@ public class colaPedidos {
     public void mostrarColaSimple() {
         colaPedidos caux = new colaPedidos(max);
         Pedidos x;
-        System.out.println("Los elementos de la cola son:");
+        //System.out.println("Los elementos de la cola son:");
 
         while (!esVacia()) {
             x = eliCola();
