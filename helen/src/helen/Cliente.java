@@ -17,7 +17,7 @@ public class Cliente {
         this.nit = nit;
     }
 
-    public void mostrar() {
+    public void mostrarCliente() {
         System.out.println("nombre: " + nombre + " nit: " + nit);
     }
 

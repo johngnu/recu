@@ -56,7 +56,7 @@ public class pilaPlato {
         Plato x;
         while (!esVacia()) {
             x = eliPila();
-            x.mostrar();
+            x.mostrarPlato();
             paux.adiPila(x);
         }
         vaciarPila(paux);

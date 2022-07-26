@@ -17,7 +17,7 @@ public class Plato {
         this.precio = precio;
     }
 
-    public void mostrar() {
+    public void mostrarPlato() {
         System.out.println("nombre: " + nombre + " precio: " + precio);
     }
 
