@@ -47,6 +47,9 @@ public class Principal {
         // a)
         calcularTotal(clp, "roberta");
         calcularTotal(clp, "helen");
+        
+        // b)
+        
     }
     
     
